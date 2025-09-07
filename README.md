@@ -1,10 +1,4 @@
 # Pantry
-This application helps track the status of groceries and other items.
-
-**Tech Stack:**
-- Docker
-- Postgres
-- Node
 
 **Requirements:**
 - [Docker](https://www.docker.com/)
