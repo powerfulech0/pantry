@@ -30,7 +30,7 @@ services:
       - "${API_PORT}:${API_PORT}"
     environment:
       API_PORT: ${API_PORT}
-      POSTGRES_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}"
+      POSTGRES_CONNECTION: ${POSTGRES_CONNECTION}
 
 volumes:
   pgdata:
