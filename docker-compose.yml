@@ -4,12 +4,9 @@ services:
     restart: always
     # Set shared memory limit
     shm_size: 128mb
-    environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: pantry
     ports:
       - "5432:5432"
+    env_file: .env
     volumes:
       - pgdata:/var/lib/postgresql/data
 
@@ -20,8 +17,7 @@ services:
       - db
     ports:
       - "3000:3000"
-    environment:
-      DATABASE_URL: "postgres://user:password@db:5432/pantry"
+    env_file: .env
 
 volumes:
   pgdata:
