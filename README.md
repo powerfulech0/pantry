@@ -8,6 +8,7 @@
   - `POSTGRES_DB`
   - `POSTGRES_PORT`
   - `POSTGRES_HOST`
+  - `API_PORT`
 
 ## API
 **Start:**
